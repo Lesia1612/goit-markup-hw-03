@@ -4,7 +4,7 @@
 /* #000000 */
 /* accent #2196F3 */
 /* rgba(255, 255, 255, 0.6) */
-/* primary background-color #FFFFFF */
+/* primary background-color #e5e5e5 */
 /* secondary background-color #F5F4FA */
 /* footer background-color #2F303A */
 
@@ -17,8 +17,9 @@
   --accent-color: #2196f3;
   --primary-background-color: #e5e5e5;
   --secondary-background-color: #f5f4fa;
-  --header-background-color: #ececec;
+  --header-background-color: #ffffff;
   --footer-background-color: #2f303a;
+  --border-line-color: #ececec;
 }
 
 body {
@@ -34,6 +35,10 @@ body {
 
 header {
   background-color: var(--header-background-color);
+}
+
+.page-header {
+  border-bottom: 1px solid var(--border-line-color);
 }
 
 .container {
@@ -298,12 +303,14 @@ button:focus {
   font-weight: 500;
   margin-top: 30px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .team-section-text {
   color: var(--secondary-text-color);
   margin-top: 10px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .team-list {
@@ -369,7 +376,7 @@ button:focus {
   margin-bottom: 30px;
 }
 
-.portfolio-container {
+.portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
